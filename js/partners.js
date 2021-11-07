@@ -6,7 +6,7 @@ const renderItems = (data) => {
         const {image, kitchen, name, price, products, stars, time_of_delivery} = item
         const a = document.createElement('a');
         
-        a.setAttribute('href', "127.0.0.1:5500/restaurant.html");
+        a.setAttribute('href', `${window.location.origin}/restaurant.html`);
         a.classList.add("card", "card-restaurant");
         a.dataset.products = products
 
